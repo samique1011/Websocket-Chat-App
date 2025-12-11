@@ -21,6 +21,7 @@ ws.on('connection' , (socket) => {
 
     socket.on("message" , (message) => {
         //i have to check what type of meesage came
+        //new comment added
         const msg = JSON.parse(message.toString());
         console.log(msg);
         
